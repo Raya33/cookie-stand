@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-9">
     <title>Objects Demo</title>
     <link rel="stylesheet" href="css/styles.css">
+</head>
 
 <body>
+
     <header>
-       <a href="index.html"> <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png" alt="Salmon Cookies Sales"></a>
-        <h1>Salmon Cookies Sales Review</h1>
+        <img class='logo' src='img/salmon.png'>
+        <nav class="navigation">
+            <a href='index.html'>HomePage</a>
+            <a href="sales.html">Sales</a>
+        </nav>
     </header>
     <main>
+        <form id="salesInput">
+            <fieldset>
+                <legend>Store Sales Input</legend>
+                <label class="nameInput">Name:
+                    <input type="text" id="name"></label>
+                </br></br>
+                <label>Minimum Customers:
+                    <input type="number" id="minCustomers"></label>
+                </br></br>
+                <label>Maximum Customers:
+                    <input type="number" id="maxCustomers"></label>
+                </br></br>
+                <label>Average Sale:
+                    <input type="number" id="avgCookies"></label>
+                <input type="submit" value="Submit">
+            </fieldset> </br>
+
+
+        </form>
         <table id="salmonTable">
-            </ul>
+
         </table>
 
-        </ul>
-    </main>
-    <footer></footer>
 
+
+    </main>
 
     <script src="js/app.js"> </script>
 </body>
