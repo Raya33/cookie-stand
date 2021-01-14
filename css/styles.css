@@ -1,15 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+body{
+background-color: #FBCEB1;
+
 }
 
-body{
-  background-color: #f0c3a3(240, 255, 255, 0.808);
-  width: 100%;
-  margin: 0;
-  
-}
+
 
 
 
@@ -34,22 +35,58 @@ a{
 .logo{
   width: 150px;
   height: 50px;
-  float: right;
+  float: left;
   padding-left: 20px;
   padding-top: 15px;
 }
 a:hover{
   color: orange;
 }
-table,th {
+
+#salmonTable{
   border-collapse: collapse;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border:1px solid black;
-}
-td{
-  border:1px solid black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0,0.15);
+  }
+  #salmonTable tr th{
+    background-color: #009879;
+    color: #dddddd;
+    text-align: left;
+    font-weight: bold;
+  }
+  #salmonTable tr,
+  #salmonTable th{
+    padding: 12px 15px;
 
+  }
+  #salmonTable tr td{
+    border-bottom: 1px solid #f3f3f3;
+  } 
+  #salmonTable tr td:nth-of-type(even){
+    background-color: #f3f3f3;
+  }
+  #salmonTable tr td:last-of-type(){
+    border-bottom: 2px solid #009879;
+  }
+  .wrapper{
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgb(100, 93, 63);
+  }
+  .wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
 
-}
+  }
+  
+
